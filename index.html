@@ -61,32 +61,48 @@ li a {
 }
 
 .searchpad2 {
+  width: 560px;
+  height: 46px;
+  margin-left: 2%;
+
 display: flex;
-margin-top: 1%;
-margin-right: 22%;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 }
 
 .inputbox {
-  border:;
-  width: 140%;
+  margin-right: 270px;
+  border:none;
+  width: 97%;
   height: 30px;
   font-size: 16px;
+}
+
+
+.mic {
+  display: flex;
+
+}
+
+.icon-user {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  
 }
 
 </style>
 
 <head>
- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
 <div class=pad-side-bar>
   <ul>
-    <li><a href="usericon.asp">usericon</a></li>
-    <li><a href="icon3x3.asp">icon3x3</a></li>
+    <li><a  href="https://github.com/LeooR22/"><img src="https://lh3.googleusercontent.com/ogw/ADea4I6Z5DoMOgVWxcgEBShSRn2SL8IIwpyZwE8w_CDroA=s83-c-mo" alt="User Icon" class="icon-user"> </a></li>
+    <li><a href= <i class="material-icons">apps</i> </a></li>
     <li><a href="images.asp">Images</a></li>
     <li><a href="gmail.asp">Gmail</a></li>
   </ul>
@@ -99,12 +115,14 @@ align-items: center;
 <div class="pad-searchbar">
   <div class="pad-searchbar2">
     <div class="searchpad">
+      
       <div class="searchpad2">
+        <i class="material-icons">search</i>
+       
         <form> 
 <input class="inputbox" type="text" id="inputbox">
-<i class="material-icons">voice</i>
         </form>
-
+        <i class="material-icons">mic</i>
       </div>
 
     </div>
@@ -112,6 +130,7 @@ align-items: center;
   </div>
 
 </div>
+
 
 
 
