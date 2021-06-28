@@ -152,19 +152,36 @@ align-items: center;
 .left-bar{
   font-family: Arial, sans-serif;
   float: left;
+  padding-left: 2%;
+  height: 10%;
+  margin-top: 10px;
 }
 
 .right-bar{
   font-family: Arial, sans-serif;
   float: right;
-}
-.backgroundcolor-bottom{
-  background-color: rgb(242 242 242);
-  position: absolute;
-    bottom: 0;
-    width: 100%;
+  height: 10%;
+  padding-right: 2%;
+  margin-top: 10px;
 }
 
+
+.backgroundcolor-bottom{
+  background-color: rgb(242 242 242);
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+.style-bottom{
+  padding-right: 20px;
+  text-decoration: none;
+  color: rgba(0,0,0,.54);
+}
 </style>
 
 <head>
@@ -228,18 +245,18 @@ align-items: center;
 </div>
 
 <div class="backgroundcolor-bottom">
- <div> <p>Argentina</p></div>
+ <div class="style-bottom"> <p style="margin-left: 1.5%;">Argentina</p></div>
   <div>
    <div class="left-bar">
-     <a href="">About</a>
-     <a href="">Advertising</a>
-     <a href="">Business</a>
-     <a href="">How Search works</a>
+     <a class="style-bottom" href="">About</a>
+     <a class="style-bottom"  href="">Advertising</a>
+     <a class="style-bottom"  href="">Business</a>
+     <a class="style-bottom"  href="">How Search works</a>
    </div>
    <div class="right-bar">
-    <a href="">Privacy</a>
-    <a href="">Terms</a>
-    <a href="">Settings</a>
+    <a class="style-bottom"  href="">Privacy</a>
+    <a class="style-bottom"  href="">Terms</a>
+    <a class="style-bottom"  href="">Settings</a>
   </div>
  </div>
 </div>
