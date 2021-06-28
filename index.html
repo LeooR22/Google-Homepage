@@ -19,10 +19,12 @@
 }
 
 .pad-searchbar {
-  height: 150px;
+  height: 115px;
   display: flex;
   justify-content: center;
  align-items: center;
+ flex-direction: column;
+ margin-top: 1%;
 }
 
 .pad-searchbar2 {
@@ -92,6 +94,7 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   width: 75px;
+  
 }
 
 
@@ -102,6 +105,7 @@ align-items: center;
   font-family: arial,sans-serif;
   font-size: 13px;
   margin-top: 4%;
+  
 }
 
 .margintop-apps{
@@ -109,20 +113,21 @@ align-items: center;
 }
 
 .style-links{
-  color: black;
+  
   text-decoration: none;
+  color: #3c4043;
 }
 
 .padbox-buttons{
   
   display: flex;
   justify-content: center;
-  margin-bottom: 100%;
+
 }
 .button1{ 
   font-size:15px;
   font-family: Arial, sans-serif;
-  padding: 7px 10px;
+  padding: 7px 18px;
   border-style: none;
   background-color: #f8f9fa;
   color: #3c4043;
@@ -132,12 +137,34 @@ align-items: center;
 .button2{
   font-size:15px;
   font-family: Arial, sans-serif;
-  padding: 10px 10px;
+  padding: 10px 18px;
 
   background-color: #f8f9fa;
   color:#3c4043;
   border:1px solid #f8f9fa;
 }
+
+
+
+
+
+
+.left-bar{
+  font-family: Arial, sans-serif;
+  float: left;
+}
+
+.right-bar{
+  font-family: Arial, sans-serif;
+  float: right;
+}
+.backgroundcolor-bottom{
+  background-color: rgb(242 242 242);
+  position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 </style>
 
 <head>
@@ -190,16 +217,35 @@ align-items: center;
     </div>
 
   </div>
+
+  <div class="padbox-buttons">
+    <input class="button1" type="button" value="Google Search">
+    <div style="width: 10px;"></div>
+    <input class="button2" type="button" value="I'm Felling lucky">
+ </div>
  
   
 </div>
 
-
-<div class="padbox-buttons">
-   <input class="button1" type="button" value="Google Search">
-   <div style="width: 10px;"></div>
-   <input class="button2" type="button" value="I'm Felling lucky">
+<div class="backgroundcolor-bottom">
+ <div> <p>Argentina</p></div>
+  <div>
+   <div class="left-bar">
+     <a href="">About</a>
+     <a href="">Advertising</a>
+     <a href="">Business</a>
+     <a href="">How Search works</a>
+   </div>
+   <div class="right-bar">
+    <a href="">Privacy</a>
+    <a href="">Terms</a>
+    <a href="">Settings</a>
+  </div>
+ </div>
 </div>
+
+
+
 
 
 </body>
